@@ -1,3 +1,5 @@
+import { semVoto } from "./semVoto.js"
+
 function idade() {
     var res = document.getElementById("res")
 
@@ -31,7 +33,7 @@ function idade() {
     console.log(idade)
 
     if(idade < 16){
-        res.innerHTML = "voce não pode votar"
+        semVoto(nascimento)
     }else if (idade < 18 || idade >= 70){
         res.innerHTML = "voto opcional"
     }else{

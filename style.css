@@ -14,6 +14,34 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* todos */
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* campo de algo */
+
 .modal {
     width: 400px;
     height: 300px;
@@ -51,7 +79,6 @@ header p{
     margin:0px;
 }
 
-
 .verificar input {
     width: 94%;
     padding: 12px;
@@ -62,33 +89,20 @@ header p{
     transition: 0.3s;
 }
 
-
 .verificar input:focus {
     border-color: #2563eb;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-
-.verificar button {
-    width: 100%;
-    padding: 14px;
-    background: linear-gradient(135deg, #1e3a8a, #2563eb);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-.verificar button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
-}
-
-
-.verificar button:active {
-    transform: scale(0.98);
+.sem-voto {
+    width: 400px;
+    height: 300px;
+    padding: 50px 20px 20px;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    display: none; /* começa escondido */
+    flex-direction: column;
+    justify-content: space-between;
 }
