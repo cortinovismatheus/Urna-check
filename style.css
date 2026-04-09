@@ -97,7 +97,7 @@ header p{
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-.sem-voto, .votar, .voto-opcional {
+.sem-voto, .votar, .voto-opcional, .agradecimento{
     width: 400px;
     padding: 50px 20px 20px;
     background: white;
@@ -111,6 +111,21 @@ header p{
 
 .sem-voto{
     height: 300px;
+}
+
+.tempo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    font-weight: bold;
+}
+
+#tempoRestante{
+    padding: 10px;
+    border: 2px solid rgba(200, 200, 200, 0.4);
+    border-radius: 20px;
 }
 
 .candidatos{
@@ -139,20 +154,28 @@ header p{
     gap:10px;
 }
 
-#btn-votar{
+.btn-votar{
     width: 100px;
     background: linear-gradient(135deg, #22c55e, #16a34a);
 }
 
-#btn-votar:hover{
+.btn-votar:hover{
     box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
 }
 
-.perfil {
-    width: 50px;
-    height: 50px;
+.perfil, .votado {
     border-radius: 50%;
     object-fit: cover;
+}
+
+.perfil{
+    width: 50px;
+    height: 50px;
+}
+
+.votado{
+    width: 80px;
+    height: 80px;
 }
 
 .action{
@@ -181,3 +204,13 @@ header p{
 .btn-nao:hover {
     box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
 }
+
+.voto{
+    margin:10px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+

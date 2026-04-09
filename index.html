@@ -46,7 +46,7 @@
             <h1>Acesso negado</h1>
             <p>Você não possui idade mínima para votar.</p>
         </header>
-        <div class="verificar">
+        <div class="tempo">
             <p>Tempo restante para votar:</p>
             <div id="tempoRestante" style="font-size: 18px; font-weight: bold; color: #dc2626;">
                 --
@@ -76,21 +76,21 @@
                     <img src="assets/perfil.png" class="perfil">
                     <p>Candidato 1</p>
                 </div>
-                <button id="btn-votar">Votar</button>
+                <button class="btn-votar">Votar</button>
             </div>
             <div class="candidato">
                 <div class="info">
                     <img src="assets/perfil.png" class="perfil">
                     <p>Candidato 2</p>
                 </div>
-                <button id="btn-votar">Votar</button>
+                <button class="btn-votar">Votar</button>
             </div>
             <div class="candidato">
                 <div class="info">
                     <img src="assets/perfil.png" class="perfil">
                     <p>Candidato 2</p>
                 </div>
-                <button id="btn-votar">Votar</button>
+                <button class="btn-votar">Votar</button>
             </div>
         </div>
         <button id="branco">Voto em branco</button>
@@ -118,7 +118,6 @@
                 </svg>
                 Sim
             </button>
-
             <button class="btn-nao">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M6 6L18 18M18 6L6 18" stroke="white" stroke-width="2.5" stroke-linecap="round" />
@@ -126,6 +125,25 @@
                 Não
             </button>
         </div>
+    </div>
+
+    <div class="agradecimento">
+        <div class="icon">
+            <svg width="100" height="100" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="8" width="18" height="10" rx="2" fill="#1e3a8a" />
+                <rect x="7" y="3" width="10" height="6" rx="1" fill="#2563eb" />
+                <rect x="10" y="10" width="4" height="2" fill="#22c55e" />
+            </svg>
+        </div>
+        <header>
+            <h1>Obrigado pelo seu voto!</h1>
+            <p>Seu voto foi registrado com sucesso.</p>
+        </header>
+        <div class="voto">
+            <img src="assets/perfil.png" class="votado">
+            <p>Candidato 1</p>
+        </div>
+        <button id="finalizar">Finalizar</button>
     </div>
 </body>
 <script type="module" src="src/index.js"></script>
