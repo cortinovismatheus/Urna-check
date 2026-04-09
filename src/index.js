@@ -8,7 +8,7 @@ function main () {
 
     const voltar = document.getElementById("understood")
     voltar.addEventListener("click", voltarInicio)
-
+    
 }
 
 main()

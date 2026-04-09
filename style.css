@@ -17,6 +17,9 @@ body {
 /* todos */
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 14px;
     background: linear-gradient(135deg, #1e3a8a, #2563eb);
@@ -42,7 +45,7 @@ button:active {
 
 /* campo de algo */
 
-.modal {
+.modal{
     width: 400px;
     height: 300px;
     padding: 50px 20px 20px;
@@ -94,9 +97,8 @@ header p{
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
 }
 
-.sem-voto {
+.sem-voto, .votar, .voto-opcional {
     width: 400px;
-    height: 300px;
     padding: 50px 20px 20px;
     background: white;
     border-radius: 16px;
@@ -105,4 +107,77 @@ header p{
     display: none; /* começa escondido */
     flex-direction: column;
     justify-content: space-between;
+}
+
+.sem-voto{
+    height: 300px;
+}
+
+.candidatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    padding: 10px;
+}
+
+.candidato{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid rgba(200, 200, 200, 0.4);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+
+#btn-votar{
+    width: 100px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+#btn-votar:hover{
+    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.action{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-sim{
+    width: 150px;
+    gap: 5px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);;
+}
+
+.btn-sim:hover {
+    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+}
+
+.btn-nao {
+    width: 150px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.btn-nao:hover {
+    box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
 }

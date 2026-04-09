@@ -1,4 +1,6 @@
 import { semVoto } from "./semVoto.js"
+import { votoObrigatorio } from "./votoObrigatorio.js"
+import { votoOpcional } from "./votoOpcional.js"
 
 function idade() {
     var res = document.getElementById("res")
@@ -35,9 +37,9 @@ function idade() {
     if(idade < 16){
         semVoto(nascimento)
     }else if (idade < 18 || idade >= 70){
-        res.innerHTML = "voto opcional"
+        votoOpcional()
     }else{
-        res.innerHTML = "voto obrigatorio"
+        votoObrigatorio(idade)
     }
 }
 
